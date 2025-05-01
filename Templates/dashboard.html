@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Proyectos</title>
+</head>
+<body>
+    <h1>Bienvenido, {{ username }}</h1>
+    <a href="/logout">Cerrar sesión</a>
+
+    <h2>Seleccionar Hoja de Excel</h2>
+    <form action="/insert_project/" method="post">
+        <label for="sheet_name">Selecciona una hoja:</label>
+        <select name="sheet_name" required>
+            {% for hoja in hojas %}
+                <option value="{{ hoja }}">{{ hoja }}</option>
+            {% endfor %}
+        </select>
+        
+        <label for="fecha">Fecha:</label>
+        <input type="date" name="fecha" required>
+        
+        <label for="asunto">Asunto:</label>
+        <input type="text" name="asunto" required>
+        
+        <label for="elaborado_por">Elaborado por:</label>
+        <input type="text" name="elaborado_por" required>
+        
+        <button type="submit">Solicitar Consecutivo</button>
+    </form>
+</body>
+</html>
