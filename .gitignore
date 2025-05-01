@@ -1,0 +1,47 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches
+.cache/
+*.log
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# VSCode settings
+.vscode/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python environment variables
+.env
+*.env
+
+# SQLite or local DB files
+*.db
+*.sqlite3
+
+# Excel files (si no quieres subir los archivos reales de OneDrive)
+*.xlsx
+*.xls
+
+# Node modules (por si usas herramientas front-end más adelante)
+node_modules/
+
+# FastAPI generated files (e.g., Swagger cache)
+openapi.json
+
+# Git settings
+.gitignore
+
